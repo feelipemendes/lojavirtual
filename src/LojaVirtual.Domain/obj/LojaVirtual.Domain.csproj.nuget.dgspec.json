@@ -1,0 +1,60 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Felipe\\Desktop\\Desafio MudiPagg\\projeto-v2\\LojaVirtual\\src\\LojaVirtual.Domain\\LojaVirtual.Domain.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Felipe\\Desktop\\Desafio MudiPagg\\projeto-v2\\LojaVirtual\\src\\LojaVirtual.Domain\\LojaVirtual.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Felipe\\Desktop\\Desafio MudiPagg\\projeto-v2\\LojaVirtual\\src\\LojaVirtual.Domain\\LojaVirtual.Domain.csproj",
+        "projectName": "LojaVirtual.Domain",
+        "projectPath": "C:\\Users\\Felipe\\Desktop\\Desafio MudiPagg\\projeto-v2\\LojaVirtual\\src\\LojaVirtual.Domain\\LojaVirtual.Domain.csproj",
+        "packagesPath": "C:\\Users\\Felipe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Felipe\\Desktop\\Desafio MudiPagg\\projeto-v2\\LojaVirtual\\src\\LojaVirtual.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Felipe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.0": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

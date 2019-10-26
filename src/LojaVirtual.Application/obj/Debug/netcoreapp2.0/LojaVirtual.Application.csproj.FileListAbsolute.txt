@@ -1,0 +1,12 @@
+C:\Users\Felipe\Desktop\Desafio MudiPagg\projeto-v2\LojaVirtual\src\LojaVirtual.Application\bin\Debug\netcoreapp2.0\LojaVirtual.Application.deps.json
+C:\Users\Felipe\Desktop\Desafio MudiPagg\projeto-v2\LojaVirtual\src\LojaVirtual.Application\bin\Debug\netcoreapp2.0\LojaVirtual.Application.dll
+C:\Users\Felipe\Desktop\Desafio MudiPagg\projeto-v2\LojaVirtual\src\LojaVirtual.Application\bin\Debug\netcoreapp2.0\LojaVirtual.Application.pdb
+C:\Users\Felipe\Desktop\Desafio MudiPagg\projeto-v2\LojaVirtual\src\LojaVirtual.Application\obj\Debug\netcoreapp2.0\LojaVirtual.Application.csprojAssemblyReference.cache
+C:\Users\Felipe\Desktop\Desafio MudiPagg\projeto-v2\LojaVirtual\src\LojaVirtual.Application\obj\Debug\netcoreapp2.0\LojaVirtual.Application.csproj.CoreCompileInputs.cache
+C:\Users\Felipe\Desktop\Desafio MudiPagg\projeto-v2\LojaVirtual\src\LojaVirtual.Application\obj\Debug\netcoreapp2.0\LojaVirtual.Application.AssemblyInfoInputs.cache
+C:\Users\Felipe\Desktop\Desafio MudiPagg\projeto-v2\LojaVirtual\src\LojaVirtual.Application\obj\Debug\netcoreapp2.0\LojaVirtual.Application.AssemblyInfo.cs
+C:\Users\Felipe\Desktop\Desafio MudiPagg\projeto-v2\LojaVirtual\src\LojaVirtual.Application\obj\Debug\netcoreapp2.0\LojaVirtual.Application.dll
+C:\Users\Felipe\Desktop\Desafio MudiPagg\projeto-v2\LojaVirtual\src\LojaVirtual.Application\obj\Debug\netcoreapp2.0\LojaVirtual.Application.pdb
+C:\Users\Felipe\Desktop\Desafio MudiPagg\projeto-v2\LojaVirtual\src\LojaVirtual.Application\bin\Debug\netcoreapp2.0\LojaVirtual.Domain.dll
+C:\Users\Felipe\Desktop\Desafio MudiPagg\projeto-v2\LojaVirtual\src\LojaVirtual.Application\bin\Debug\netcoreapp2.0\LojaVirtual.Domain.pdb
+C:\Users\Felipe\Desktop\Desafio MudiPagg\projeto-v2\LojaVirtual\src\LojaVirtual.Application\obj\Debug\netcoreapp2.0\LojaVirtual.Application.csproj.CopyComplete

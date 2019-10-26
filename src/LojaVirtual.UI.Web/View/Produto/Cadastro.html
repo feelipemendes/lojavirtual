@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html ng-app="appProduto">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <link href="../../Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body class="container" ng-controller="produtoController">
+
+    <div class="card card-body bd-dark">
+        <h2 class="text-white">Cadastro de Produtos</h2>
+        <p class="text-white">
+            <a href="../../Index.html">Voltar</a> para a página inicial.
+        </p>
+    </div>
+
+    <br />
+
+    <strong>Formulário para cadastro de Produtos</strong>
+    <hr />
+
+    <div class="row">
+        <div class="col-md-4">
+            <label>Codigo do produto:</label>
+            <input type="text" class="form-control" placeholder="Digite aqui" ng-model="produto.CodigoProduto" />
+            <br />
+
+            <label>Nome do Produto:</label>
+            <input type="text" class="form-control" placeholder="Digite aqui" ng-model="produto.Nome" />
+            <br />
+
+            <label>Descrição do Produto:</label>
+            <input type="text" class="form-control" placeholder="Digite aqui" ng-model="produto.Descricao" />
+            <br />
+
+            <label>Url do Produto:</label>
+            <input type="text" class="form-control" placeholder="Digite aqui" ng-model="produto.UrlImagem" />
+            <br />
+
+            <label>Selecione a Categoria do Produto:</label>
+            <select class="form-control" ng-model="produto.Categoria" />
+            <br />
+
+            <label>Preço do Produto:</label>
+            <input type="text" class="form-control" placeholder="Digite aqui" ng-model="produto.Preco" />
+            <br />
+
+            <label>Marca do Produto:</label>
+            <input type="text" class="form-control" placeholder="Digite aqui" ng-model="produto.Marca" />
+            <br />
+
+            <button class="btn btn-sucess" ng-click="cadastrar()">
+                Cadastrar Produto
+            </button>
+            <br />
+            <br />
+
+            <strong>{{mensagem}}</strong>
+        </div>
+
+    </div>
+
+    <script src="../../Scripts/angular.min.js"></script>
+    <script src="../../Scripts/bootstrap.min.js"></script>
+    <script src="../../Scripts/jquery-3.0.0.min.js"></script>
+
+    <script>
+        var app = angular.module('appProduto', []);
+
+        app.controller('produtoController', function ($scope, $http) {
+            $scope.produto = {
+                CodigoProduto: "",
+                Nome: "",
+                Descricao: "",
+                UrlImagem: "",
+                //Categoria: "",
+                Preco: "",
+                Marca: "",
+
+            };
+
+            $scope.cadastrar = function () {
+                $scope.mensagem = "Processando, por favor aguarde.";
+
+                $http.post('http://localhost:51795/api/produto/post',
+                    $scope.produto)
+                    .then(function (result) {
+
+                        $scope.mensagem = result.data;
+
+                        $scope.produto.CodigoProduto = "";
+                        $scope.produto.Nome = "";
+                        $scope.produto.Descricao = "";
+                        $scope.produto.UrlImagem = "";
+                        //$scope.produto.Categoria = "";
+                        $scope.produto.Preco = "";
+                        $scope.produto.Marca = "";
+                    })
+                    .catch(function (e) {
+                        console.log(e);
+                    });
+            };
+        });
+    </script>
+</body>
+</html>
