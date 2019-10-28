@@ -15,7 +15,7 @@ namespace LojaVirtual.Application.ViewModels
         public string UrlImagem { get; set; }
 
         [Required(ErrorMessage = "Por favor, insira a categoria do Produto.")]
-        public Categoria Categoria { get; set; }
+        public int IdCategoria { get; set; }
 
         [Required(ErrorMessage = "Por favor, insira o preço do Produto.")]
         public decimal Preco { get; set; }

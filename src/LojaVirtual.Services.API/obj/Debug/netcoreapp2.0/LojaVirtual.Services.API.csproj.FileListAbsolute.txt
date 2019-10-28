@@ -1,18 +1,36 @@
-C:\Users\Felipe\Desktop\Desafio MudiPagg\projeto-v2\LojaVirtual\src\LojaVirtual.Services.API\bin\Debug\netcoreapp2.0\LojaVirtual.Services.API.deps.json
-C:\Users\Felipe\Desktop\Desafio MudiPagg\projeto-v2\LojaVirtual\src\LojaVirtual.Services.API\bin\Debug\netcoreapp2.0\LojaVirtual.Services.API.runtimeconfig.json
-C:\Users\Felipe\Desktop\Desafio MudiPagg\projeto-v2\LojaVirtual\src\LojaVirtual.Services.API\bin\Debug\netcoreapp2.0\LojaVirtual.Services.API.runtimeconfig.dev.json
-C:\Users\Felipe\Desktop\Desafio MudiPagg\projeto-v2\LojaVirtual\src\LojaVirtual.Services.API\bin\Debug\netcoreapp2.0\LojaVirtual.Services.API.dll
-C:\Users\Felipe\Desktop\Desafio MudiPagg\projeto-v2\LojaVirtual\src\LojaVirtual.Services.API\bin\Debug\netcoreapp2.0\LojaVirtual.Services.API.pdb
-C:\Users\Felipe\Desktop\Desafio MudiPagg\projeto-v2\LojaVirtual\src\LojaVirtual.Services.API\bin\Debug\netcoreapp2.0\LojaVirtual.Domain.dll
-C:\Users\Felipe\Desktop\Desafio MudiPagg\projeto-v2\LojaVirtual\src\LojaVirtual.Services.API\bin\Debug\netcoreapp2.0\LojaVirtual.Infra.Data.dll
-C:\Users\Felipe\Desktop\Desafio MudiPagg\projeto-v2\LojaVirtual\src\LojaVirtual.Services.API\bin\Debug\netcoreapp2.0\LojaVirtual.Infra.Data.pdb
-C:\Users\Felipe\Desktop\Desafio MudiPagg\projeto-v2\LojaVirtual\src\LojaVirtual.Services.API\bin\Debug\netcoreapp2.0\LojaVirtual.Domain.pdb
-C:\Users\Felipe\Desktop\Desafio MudiPagg\projeto-v2\LojaVirtual\src\LojaVirtual.Services.API\obj\Debug\netcoreapp2.0\LojaVirtual.Services.API.csprojAssemblyReference.cache
-C:\Users\Felipe\Desktop\Desafio MudiPagg\projeto-v2\LojaVirtual\src\LojaVirtual.Services.API\obj\Debug\netcoreapp2.0\LojaVirtual.Services.API.csproj.CoreCompileInputs.cache
-C:\Users\Felipe\Desktop\Desafio MudiPagg\projeto-v2\LojaVirtual\src\LojaVirtual.Services.API\obj\Debug\netcoreapp2.0\LojaVirtual.Services.API.AssemblyInfoInputs.cache
-C:\Users\Felipe\Desktop\Desafio MudiPagg\projeto-v2\LojaVirtual\src\LojaVirtual.Services.API\obj\Debug\netcoreapp2.0\LojaVirtual.Services.API.AssemblyInfo.cs
-C:\Users\Felipe\Desktop\Desafio MudiPagg\projeto-v2\LojaVirtual\src\LojaVirtual.Services.API\obj\Debug\netcoreapp2.0\LojaVirtual.Services.API.csproj.CopyComplete
-C:\Users\Felipe\Desktop\Desafio MudiPagg\projeto-v2\LojaVirtual\src\LojaVirtual.Services.API\obj\Debug\netcoreapp2.0\LojaVirtual.Services.API.dll
-C:\Users\Felipe\Desktop\Desafio MudiPagg\projeto-v2\LojaVirtual\src\LojaVirtual.Services.API\obj\Debug\netcoreapp2.0\LojaVirtual.Services.API.pdb
-C:\Users\Felipe\Desktop\Desafio MudiPagg\projeto-v2\LojaVirtual\src\LojaVirtual.Services.API\bin\Debug\netcoreapp2.0\LojaVirtual.Application.dll
-C:\Users\Felipe\Desktop\Desafio MudiPagg\projeto-v2\LojaVirtual\src\LojaVirtual.Services.API\bin\Debug\netcoreapp2.0\LojaVirtual.Application.pdb
+C:/Users/Felipe/Desktop/Desafio MudiPagg/projeto-v2/LojaVirtual/src/LojaVirtual.Services.API/bin/Debug/netcoreapp2.0/LojaVirtual.Services.API.deps.json
+C:/Users/Felipe/Desktop/Desafio MudiPagg/projeto-v2/LojaVirtual/src/LojaVirtual.Services.API/bin/Debug/netcoreapp2.0/LojaVirtual.Services.API.runtimeconfig.json
+C:/Users/Felipe/Desktop/Desafio MudiPagg/projeto-v2/LojaVirtual/src/LojaVirtual.Services.API/bin/Debug/netcoreapp2.0/LojaVirtual.Services.API.runtimeconfig.dev.json
+C:/Users/Felipe/Desktop/Desafio MudiPagg/projeto-v2/LojaVirtual/src/LojaVirtual.Services.API/bin/Debug/netcoreapp2.0/LojaVirtual.Services.API.dll
+C:/Users/Felipe/Desktop/Desafio MudiPagg/projeto-v2/LojaVirtual/src/LojaVirtual.Services.API/bin/Debug/netcoreapp2.0/LojaVirtual.Services.API.pdb
+C:/Users/Felipe/Desktop/Desafio MudiPagg/projeto-v2/LojaVirtual/src/LojaVirtual.Services.API/bin/Debug/netcoreapp2.0/LojaVirtual.Domain.dll
+C:/Users/Felipe/Desktop/Desafio MudiPagg/projeto-v2/LojaVirtual/src/LojaVirtual.Services.API/bin/Debug/netcoreapp2.0/LojaVirtual.Infra.Data.dll
+C:/Users/Felipe/Desktop/Desafio MudiPagg/projeto-v2/LojaVirtual/src/LojaVirtual.Services.API/bin/Debug/netcoreapp2.0/LojaVirtual.Infra.Data.pdb
+C:/Users/Felipe/Desktop/Desafio MudiPagg/projeto-v2/LojaVirtual/src/LojaVirtual.Services.API/bin/Debug/netcoreapp2.0/LojaVirtual.Domain.pdb
+C:/Users/Felipe/Desktop/Desafio MudiPagg/projeto-v2/LojaVirtual/src/LojaVirtual.Services.API/obj/Debug/netcoreapp2.0/LojaVirtual.Services.API.csprojAssemblyReference.cache
+C:/Users/Felipe/Desktop/Desafio MudiPagg/projeto-v2/LojaVirtual/src/LojaVirtual.Services.API/obj/Debug/netcoreapp2.0/LojaVirtual.Services.API.csproj.CoreCompileInputs.cache
+C:/Users/Felipe/Desktop/Desafio MudiPagg/projeto-v2/LojaVirtual/src/LojaVirtual.Services.API/obj/Debug/netcoreapp2.0/LojaVirtual.Services.API.AssemblyInfoInputs.cache
+C:/Users/Felipe/Desktop/Desafio MudiPagg/projeto-v2/LojaVirtual/src/LojaVirtual.Services.API/obj/Debug/netcoreapp2.0/LojaVirtual.Services.API.AssemblyInfo.cs
+C:/Users/Felipe/Desktop/Desafio MudiPagg/projeto-v2/LojaVirtual/src/LojaVirtual.Services.API/obj/Debug/netcoreapp2.0/LojaVirtual.Services.API.csproj.CopyComplete
+C:/Users/Felipe/Desktop/Desafio MudiPagg/projeto-v2/LojaVirtual/src/LojaVirtual.Services.API/obj/Debug/netcoreapp2.0/LojaVirtual.Services.API.dll
+C:/Users/Felipe/Desktop/Desafio MudiPagg/projeto-v2/LojaVirtual/src/LojaVirtual.Services.API/obj/Debug/netcoreapp2.0/LojaVirtual.Services.API.pdb
+C:/Users/Felipe/Desktop/Desafio MudiPagg/projeto-v2/LojaVirtual/src/LojaVirtual.Services.API/bin/Debug/netcoreapp2.0/LojaVirtual.Application.dll
+C:/Users/Felipe/Desktop/Desafio MudiPagg/projeto-v2/LojaVirtual/src/LojaVirtual.Services.API/bin/Debug/netcoreapp2.0/LojaVirtual.Application.pdb
+/Users/feelipemendes/Desktop/LojaVirtual/lojavirtual/src/LojaVirtual.Services.API/bin/Debug/netcoreapp2.0/LojaVirtual.Services.API.deps.json
+/Users/feelipemendes/Desktop/LojaVirtual/lojavirtual/src/LojaVirtual.Services.API/bin/Debug/netcoreapp2.0/LojaVirtual.Services.API.runtimeconfig.json
+/Users/feelipemendes/Desktop/LojaVirtual/lojavirtual/src/LojaVirtual.Services.API/bin/Debug/netcoreapp2.0/LojaVirtual.Services.API.runtimeconfig.dev.json
+/Users/feelipemendes/Desktop/LojaVirtual/lojavirtual/src/LojaVirtual.Services.API/bin/Debug/netcoreapp2.0/LojaVirtual.Services.API.dll
+/Users/feelipemendes/Desktop/LojaVirtual/lojavirtual/src/LojaVirtual.Services.API/bin/Debug/netcoreapp2.0/LojaVirtual.Services.API.pdb
+/Users/feelipemendes/Desktop/LojaVirtual/lojavirtual/src/LojaVirtual.Services.API/bin/Debug/netcoreapp2.0/LojaVirtual.Application.dll
+/Users/feelipemendes/Desktop/LojaVirtual/lojavirtual/src/LojaVirtual.Services.API/bin/Debug/netcoreapp2.0/LojaVirtual.Domain.dll
+/Users/feelipemendes/Desktop/LojaVirtual/lojavirtual/src/LojaVirtual.Services.API/bin/Debug/netcoreapp2.0/LojaVirtual.Infra.Data.dll
+/Users/feelipemendes/Desktop/LojaVirtual/lojavirtual/src/LojaVirtual.Services.API/bin/Debug/netcoreapp2.0/LojaVirtual.Application.pdb
+/Users/feelipemendes/Desktop/LojaVirtual/lojavirtual/src/LojaVirtual.Services.API/bin/Debug/netcoreapp2.0/LojaVirtual.Infra.Data.pdb
+/Users/feelipemendes/Desktop/LojaVirtual/lojavirtual/src/LojaVirtual.Services.API/bin/Debug/netcoreapp2.0/LojaVirtual.Domain.pdb
+/Users/feelipemendes/Desktop/LojaVirtual/lojavirtual/src/LojaVirtual.Services.API/obj/Debug/netcoreapp2.0/LojaVirtual.Services.API.csprojAssemblyReference.cache
+/Users/feelipemendes/Desktop/LojaVirtual/lojavirtual/src/LojaVirtual.Services.API/obj/Debug/netcoreapp2.0/LojaVirtual.Services.API.csproj.CoreCompileInputs.cache
+/Users/feelipemendes/Desktop/LojaVirtual/lojavirtual/src/LojaVirtual.Services.API/obj/Debug/netcoreapp2.0/LojaVirtual.Services.API.AssemblyInfoInputs.cache
+/Users/feelipemendes/Desktop/LojaVirtual/lojavirtual/src/LojaVirtual.Services.API/obj/Debug/netcoreapp2.0/LojaVirtual.Services.API.AssemblyInfo.cs
+/Users/feelipemendes/Desktop/LojaVirtual/lojavirtual/src/LojaVirtual.Services.API/obj/Debug/netcoreapp2.0/LojaVirtual.Services.API.csproj.CopyComplete
+/Users/feelipemendes/Desktop/LojaVirtual/lojavirtual/src/LojaVirtual.Services.API/obj/Debug/netcoreapp2.0/LojaVirtual.Services.API.dll
+/Users/feelipemendes/Desktop/LojaVirtual/lojavirtual/src/LojaVirtual.Services.API/obj/Debug/netcoreapp2.0/LojaVirtual.Services.API.pdb

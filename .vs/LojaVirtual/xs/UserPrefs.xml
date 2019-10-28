@@ -1,0 +1,52 @@
+﻿<Properties StartupConfiguration="{CE7CFA25-CA30-45BD-BDBD-A5A20534E432}|Default">
+  <MonoDevelop.Ide.ItemProperties.0_220-_220UI.LojaVirtual.UI.Web PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.1_220-_220Services.LojaVirtual.Services.API PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/LojaVirtual.Application/Services/ProdutoService.cs">
+    <Files>
+      <File FileName="src/LojaVirtual.Services.API/Controllers/CategoriaController.cs" Line="101" Column="53" />
+      <File FileName="src/LojaVirtual.Domain/Entities/Produto.cs" Line="15" Column="22" />
+      <File FileName="src/LojaVirtual.Domain/Entities/Categoria.cs" Line="10" Column="22" />
+      <File FileName="src/LojaVirtual.Application/ViewModels/CategoriaConsultaViewModel.cs" Line="9" Column="1" />
+      <File FileName="src/LojaVirtual.Application/ViewModels/ProdutoConsultaViewModel.cs" Line="8" Column="25" />
+      <File FileName="src/LojaVirtual.Data/Repositories/ProdutoRepository.cs" Line="1" Column="1" />
+      <File FileName="src/LojaVirtual.Application/Services/ProdutoService.cs" Line="12" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="LojaVirtual" expanded="True">
+            <Node name="1 - Services" expanded="True">
+              <Node name="LojaVirtual.Services.API" expanded="True">
+                <Node name="Controllers" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="2 - Application" expanded="True">
+              <Node name="LojaVirtual.Application" expanded="True">
+                <Node name="Services" expanded="True">
+                  <Node name="ProdutoService.cs" selected="True" />
+                </Node>
+                <Node name="ViewModels" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="3 - Domain" expanded="True">
+              <Node name="LojaVirtual.Domain" expanded="True">
+                <Node name="Entities" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="4 - Infra" expanded="True">
+              <Node name="LojaVirtual.Infra.Data" expanded="True">
+                <Node name="Repositories" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

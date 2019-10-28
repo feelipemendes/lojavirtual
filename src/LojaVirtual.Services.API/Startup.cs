@@ -38,6 +38,8 @@ namespace LojaVirtual.Services.API
 
             services.AddTransient<IProdutoRepository, ProdutoRepository>();
             services.AddTransient<IProdutoService, ProdutoService>();
+            services.AddTransient<ICategoriaService, CategoriaService>();
+            services.AddTransient<ICategoriaRepository, CategoriaRepository>();
 
             var config = new MapperConfiguration(cfg =>
             {

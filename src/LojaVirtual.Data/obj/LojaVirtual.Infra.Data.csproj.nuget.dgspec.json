@@ -1,35 +1,37 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Felipe\\Desktop\\Desafio MudiPagg\\projeto-v2\\LojaVirtual\\src\\LojaVirtual.Data\\LojaVirtual.Infra.Data.csproj": {}
+    "/Users/feelipemendes/Desktop/LojaVirtual/lojavirtual/src/LojaVirtual.Data/LojaVirtual.Infra.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Felipe\\Desktop\\Desafio MudiPagg\\projeto-v2\\LojaVirtual\\src\\LojaVirtual.Data\\LojaVirtual.Infra.Data.csproj": {
+    "/Users/feelipemendes/Desktop/LojaVirtual/lojavirtual/src/LojaVirtual.Data/LojaVirtual.Infra.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Felipe\\Desktop\\Desafio MudiPagg\\projeto-v2\\LojaVirtual\\src\\LojaVirtual.Data\\LojaVirtual.Infra.Data.csproj",
+        "projectUniqueName": "/Users/feelipemendes/Desktop/LojaVirtual/lojavirtual/src/LojaVirtual.Data/LojaVirtual.Infra.Data.csproj",
         "projectName": "LojaVirtual.Infra.Data",
-        "projectPath": "C:\\Users\\Felipe\\Desktop\\Desafio MudiPagg\\projeto-v2\\LojaVirtual\\src\\LojaVirtual.Data\\LojaVirtual.Infra.Data.csproj",
-        "packagesPath": "C:\\Users\\Felipe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Felipe\\Desktop\\Desafio MudiPagg\\projeto-v2\\LojaVirtual\\src\\LojaVirtual.Data\\obj\\",
+        "projectPath": "/Users/feelipemendes/Desktop/LojaVirtual/lojavirtual/src/LojaVirtual.Data/LojaVirtual.Infra.Data.csproj",
+        "packagesPath": "/Users/feelipemendes/.nuget/packages/",
+        "outputPath": "/Users/feelipemendes/Desktop/LojaVirtual/lojavirtual/src/LojaVirtual.Data/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Felipe\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/feelipemendes/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp2.0": {
-            "projectReferences": {}
+            "projectReferences": {
+              "/Users/feelipemendes/Desktop/LojaVirtual/lojavirtual/src/LojaVirtual.Domain/LojaVirtual.Domain.csproj": {
+                "projectPath": "/Users/feelipemendes/Desktop/LojaVirtual/lojavirtual/src/LojaVirtual.Domain/LojaVirtual.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -58,6 +60,60 @@
             "MongoDbGenericRepository": {
               "target": "Package",
               "version": "[1.4.0, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "/Users/feelipemendes/Desktop/LojaVirtual/lojavirtual/src/LojaVirtual.Domain/LojaVirtual.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/feelipemendes/Desktop/LojaVirtual/lojavirtual/src/LojaVirtual.Domain/LojaVirtual.Domain.csproj",
+        "projectName": "LojaVirtual.Domain",
+        "projectPath": "/Users/feelipemendes/Desktop/LojaVirtual/lojavirtual/src/LojaVirtual.Domain/LojaVirtual.Domain.csproj",
+        "packagesPath": "/Users/feelipemendes/.nuget/packages/",
+        "outputPath": "/Users/feelipemendes/Desktop/LojaVirtual/lojavirtual/src/LojaVirtual.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/feelipemendes/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.0": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.0, )",
+              "autoReferenced": true
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.9.2, )"
             }
           },
           "imports": [

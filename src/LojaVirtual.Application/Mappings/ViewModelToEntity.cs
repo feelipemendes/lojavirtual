@@ -10,6 +10,8 @@ namespace LojaVirtual.Application.Mappings
         {
             CreateMap<ProdutoCadastroViewModel, Produto>();
             CreateMap<ProdutoEdicaoViewModel, Produto>();
+            CreateMap<CategoriaEdicaoViewModel, Categoria>();
+            CreateMap<CategoriaCadasatroViewModel, Categoria>();
         }
     }
 }

@@ -14,8 +14,8 @@ namespace LojaVirtual.Services.API.Controllers
     [EnableCors("AllowAnyOrigin")]
     public class ProdutoController : Controller
     {
-        protected readonly IProdutoService _service;
-        protected readonly IMapper _mapper;
+        private readonly IProdutoService _service;
+        private readonly IMapper _mapper;
 
         public ProdutoController(IProdutoService service, IMapper mapper)
         {

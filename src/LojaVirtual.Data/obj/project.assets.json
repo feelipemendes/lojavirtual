@@ -1687,6 +1687,9 @@
       "LojaVirtual.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "MongoDB.Driver": "2.9.2"
+        },
         "compile": {
           "bin/placeholder/LojaVirtual.Domain.dll": {}
         },
@@ -5921,37 +5924,35 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Felipe\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/Users/feelipemendes/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Felipe\\Desktop\\Desafio MudiPagg\\projeto-v2\\LojaVirtual\\src\\LojaVirtual.Data\\LojaVirtual.Infra.Data.csproj",
+      "projectUniqueName": "/Users/feelipemendes/Desktop/LojaVirtual/lojavirtual/src/LojaVirtual.Data/LojaVirtual.Infra.Data.csproj",
       "projectName": "LojaVirtual.Infra.Data",
-      "projectPath": "C:\\Users\\Felipe\\Desktop\\Desafio MudiPagg\\projeto-v2\\LojaVirtual\\src\\LojaVirtual.Data\\LojaVirtual.Infra.Data.csproj",
-      "packagesPath": "C:\\Users\\Felipe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Felipe\\Desktop\\Desafio MudiPagg\\projeto-v2\\LojaVirtual\\src\\LojaVirtual.Data\\obj\\",
+      "projectPath": "/Users/feelipemendes/Desktop/LojaVirtual/lojavirtual/src/LojaVirtual.Data/LojaVirtual.Infra.Data.csproj",
+      "packagesPath": "/Users/feelipemendes/.nuget/packages/",
+      "outputPath": "/Users/feelipemendes/Desktop/LojaVirtual/lojavirtual/src/LojaVirtual.Data/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Felipe\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/feelipemendes/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Users\\Felipe\\Desktop\\Desafio MudiPagg\\projeto-v2\\LojaVirtual\\src\\LojaVirtual.Domain\\LojaVirtual.Domain.csproj": {
-              "projectPath": "C:\\Users\\Felipe\\Desktop\\Desafio MudiPagg\\projeto-v2\\LojaVirtual\\src\\LojaVirtual.Domain\\LojaVirtual.Domain.csproj"
+            "/Users/feelipemendes/Desktop/LojaVirtual/lojavirtual/src/LojaVirtual.Domain/LojaVirtual.Domain.csproj": {
+              "projectPath": "/Users/feelipemendes/Desktop/LojaVirtual/lojavirtual/src/LojaVirtual.Domain/LojaVirtual.Domain.csproj"
             }
           }
         }

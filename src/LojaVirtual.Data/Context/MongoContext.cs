@@ -25,5 +25,13 @@ namespace MongoDB.Data.Context
                 return _database.GetCollection<Produto>("Produto");
             }
         }
+
+        public IMongoCollection<Categoria> Categorias
+        {
+            get
+            {
+                return _database.GetCollection<Categoria>("Categoria");
+            }
+        }
     }
 }

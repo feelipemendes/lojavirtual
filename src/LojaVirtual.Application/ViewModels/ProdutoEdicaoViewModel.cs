@@ -24,7 +24,7 @@ namespace LojaVirtual.Application.ViewModels
 
         [Required(ErrorMessage = "Por favor, insira a categoria do Produto.")]
         [DisplayName("Categoria")]
-        public Categoria Categoria { get; set; }
+        public int IdCategoria { get; set; }
 
         [Required(ErrorMessage = "Por favor, insira o preço do Produto.")]
         [DisplayName("Preço")]

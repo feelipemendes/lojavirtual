@@ -5350,6 +5350,9 @@
       "LojaVirtual.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "MongoDB.Driver": "2.9.2"
+        },
         "compile": {
           "bin/placeholder/LojaVirtual.Domain.dll": {}
         },
@@ -14435,40 +14438,38 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Felipe\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/Users/feelipemendes/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Felipe\\Desktop\\Desafio MudiPagg\\projeto-v2\\LojaVirtual\\src\\LojaVirtual.Services.API\\LojaVirtual.Services.API.csproj",
+      "projectUniqueName": "/Users/feelipemendes/Desktop/LojaVirtual/lojavirtual/src/LojaVirtual.Services.API/LojaVirtual.Services.API.csproj",
       "projectName": "LojaVirtual.Services.API",
-      "projectPath": "C:\\Users\\Felipe\\Desktop\\Desafio MudiPagg\\projeto-v2\\LojaVirtual\\src\\LojaVirtual.Services.API\\LojaVirtual.Services.API.csproj",
-      "packagesPath": "C:\\Users\\Felipe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Felipe\\Desktop\\Desafio MudiPagg\\projeto-v2\\LojaVirtual\\src\\LojaVirtual.Services.API\\obj\\",
+      "projectPath": "/Users/feelipemendes/Desktop/LojaVirtual/lojavirtual/src/LojaVirtual.Services.API/LojaVirtual.Services.API.csproj",
+      "packagesPath": "/Users/feelipemendes/.nuget/packages/",
+      "outputPath": "/Users/feelipemendes/Desktop/LojaVirtual/lojavirtual/src/LojaVirtual.Services.API/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Felipe\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/feelipemendes/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Users\\Felipe\\Desktop\\Desafio MudiPagg\\projeto-v2\\LojaVirtual\\src\\LojaVirtual.Application\\LojaVirtual.Application.csproj": {
-              "projectPath": "C:\\Users\\Felipe\\Desktop\\Desafio MudiPagg\\projeto-v2\\LojaVirtual\\src\\LojaVirtual.Application\\LojaVirtual.Application.csproj"
+            "/Users/feelipemendes/Desktop/LojaVirtual/lojavirtual/src/LojaVirtual.Application/LojaVirtual.Application.csproj": {
+              "projectPath": "/Users/feelipemendes/Desktop/LojaVirtual/lojavirtual/src/LojaVirtual.Application/LojaVirtual.Application.csproj"
             },
-            "C:\\Users\\Felipe\\Desktop\\Desafio MudiPagg\\projeto-v2\\LojaVirtual\\src\\LojaVirtual.Data\\LojaVirtual.Infra.Data.csproj": {
-              "projectPath": "C:\\Users\\Felipe\\Desktop\\Desafio MudiPagg\\projeto-v2\\LojaVirtual\\src\\LojaVirtual.Data\\LojaVirtual.Infra.Data.csproj"
+            "/Users/feelipemendes/Desktop/LojaVirtual/lojavirtual/src/LojaVirtual.Data/LojaVirtual.Infra.Data.csproj": {
+              "projectPath": "/Users/feelipemendes/Desktop/LojaVirtual/lojavirtual/src/LojaVirtual.Data/LojaVirtual.Infra.Data.csproj"
             }
           }
         }
@@ -14522,7 +14523,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "O pacote 'Microsoft.AspNet.WebApi.Client 4.0.20710' foi restaurado usando '.NETFramework,Version=v4.6.1' em vez da estrutura de destino do projeto '.NETCoreApp,Version=v2.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
+      "message": "Package 'Microsoft.AspNet.WebApi.Client 4.0.20710' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
       "libraryId": "Microsoft.AspNet.WebApi.Client",
       "targetGraphs": [
         ".NETCoreApp,Version=v2.0"
@@ -14532,7 +14533,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "O pacote 'Microsoft.AspNet.WebApi.Core 4.0.20710' foi restaurado usando '.NETFramework,Version=v4.6.1' em vez da estrutura de destino do projeto '.NETCoreApp,Version=v2.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
+      "message": "Package 'Microsoft.AspNet.WebApi.Core 4.0.20710' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
       "libraryId": "Microsoft.AspNet.WebApi.Core",
       "targetGraphs": [
         ".NETCoreApp,Version=v2.0"
@@ -14542,7 +14543,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "O pacote 'Microsoft.Net.Http 2.0.20710' foi restaurado usando '.NETFramework,Version=v4.6.1' em vez da estrutura de destino do projeto '.NETCoreApp,Version=v2.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
+      "message": "Package 'Microsoft.Net.Http 2.0.20710' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
       "libraryId": "Microsoft.Net.Http",
       "targetGraphs": [
         ".NETCoreApp,Version=v2.0"
@@ -14552,7 +14553,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "O pacote 'SimpleInjector.Integration.WebApi 4.7.1' foi restaurado usando '.NETFramework,Version=v4.6.1' em vez da estrutura de destino do projeto '.NETCoreApp,Version=v2.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
+      "message": "Package 'SimpleInjector.Integration.WebApi 4.7.1' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
       "libraryId": "SimpleInjector.Integration.WebApi",
       "targetGraphs": [
         ".NETCoreApp,Version=v2.0"

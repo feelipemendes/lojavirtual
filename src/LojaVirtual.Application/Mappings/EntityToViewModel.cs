@@ -9,6 +9,7 @@ namespace LojaVirtual.Application.Mappings
         public EntityToViewModel()
         {
             CreateMap<Produto, ProdutoConsultaViewModel>();
+            CreateMap<Categoria, CategoriaConsultaViewModel>();
         }
     }
 }

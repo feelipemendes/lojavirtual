@@ -15,4 +15,7 @@
     <ProjectReference Include="..\LojaVirtual.Domain\LojaVirtual.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Remove="Repositories\Generics\BaseRepository.cs" />
+  </ItemGroup>
 </Project>

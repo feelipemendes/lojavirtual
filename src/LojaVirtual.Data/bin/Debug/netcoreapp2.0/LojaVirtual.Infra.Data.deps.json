@@ -1109,6 +1109,9 @@
         }
       },
       "LojaVirtual.Domain/1.0.0": {
+        "dependencies": {
+          "MongoDB.Driver": "2.9.2"
+        },
         "runtime": {
           "LojaVirtual.Domain.dll": {}
         }

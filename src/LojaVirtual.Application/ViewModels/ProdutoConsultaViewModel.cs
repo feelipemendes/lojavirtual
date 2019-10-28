@@ -1,10 +1,11 @@
 ﻿using LojaVirtual.Domain;
+using LojaVirtual.Domain.Entities;
 
 namespace LojaVirtual.Application.ViewModels
 {
     public class ProdutoConsultaViewModel
     {
-        
+        public string Id { get; set; }
         public string Nome { get; set; }        
         public string Descricao { get; set; }        
         public string UrlImagem { get; set; }

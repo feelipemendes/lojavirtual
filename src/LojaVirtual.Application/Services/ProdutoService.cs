@@ -7,11 +7,14 @@ namespace LojaVirtual.Application.Services
 {
     public class ProdutoService : IProdutoService
     {
-        protected readonly IProdutoRepository _repository;
+        private readonly IProdutoRepository _produtoRepository;
+        private readonly ICategoriaRepository _categoriaRepository;
 
-        public ProdutoService(IProdutoRepository repository)
+
+        public ProdutoService(IProdutoRepository produtoRepository, ICategoriaRepository categoriaRepository)
         {
-            _repository = repository;
+            _produtoRepository = produtoRepository;
+            _categoriaRepository = categoriaRepository;
         }
 
         public void Atualizar(int id, Produto produto)
