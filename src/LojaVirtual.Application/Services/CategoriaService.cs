@@ -15,12 +15,12 @@ namespace LojaVirtual.Application.Services
             _repository = repository;
         }
 
-        public void Atualizar(int id, Categoria categoria)
+        public void Atualizar(string id, Categoria categoria)
         {
             _repository.Atualizar(id, categoria);
         }
 
-        public void Detetar(int id)
+        public void Detetar(string id)
         {
             _repository.Detetar(id);
         }
@@ -30,7 +30,7 @@ namespace LojaVirtual.Application.Services
             _repository.Inserir(categoria);
         }
 
-        public Categoria ObterPorId(int id)
+        public Categoria ObterPorId(string id)
         {
             return _repository.ObterPorId(id);
         }

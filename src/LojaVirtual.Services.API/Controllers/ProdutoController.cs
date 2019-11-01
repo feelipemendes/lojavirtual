@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
 using LojaVirtual.Application.Interfaces;
+using LojaVirtual.Application.Utils;
 using LojaVirtual.Application.ViewModels;
 using LojaVirtual.Domain.Entities;
-using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -10,8 +10,7 @@ using System.Collections.Generic;
 namespace LojaVirtual.Services.API.Controllers
 {
     [Produces("application/json")]
-    [Route("api/Produto")]
-    [EnableCors("AllowAnyOrigin")]
+    [Route("api/produto")]
     public class ProdutoController : Controller
     {
         private readonly IProdutoService _service;
@@ -23,13 +22,13 @@ namespace LojaVirtual.Services.API.Controllers
             _mapper = mapper;
         }
 
-        //POST api/produto
-        [HttpPost]        
-        public IActionResult Post([FromBody] ProdutoCadastroViewModel model)
+        //POST: api/produto/cadastrar
+        [HttpPost]
+        public IActionResult Cadastrar([FromBody] ProdutoCadastroViewModel model)
         {
             if (!ModelState.IsValid)
             {
-                return new BadRequestResult();// 400
+                return BadRequest(ValidationUtil.GetErrors(ModelState));// 400
             }
 
             try
@@ -46,13 +45,13 @@ namespace LojaVirtual.Services.API.Controllers
             }
         }
 
-        //PUT api/produto
+        //PUT api/produto/atualizar
         [HttpPut]
-        public IActionResult Put([FromBody] ProdutoEdicaoViewModel model)
+        public IActionResult Atualizar([FromBody] ProdutoEdicaoViewModel model)
         {
             if (!ModelState.IsValid)
             {
-                return new BadRequestResult(); // 400
+                return BadRequest(ValidationUtil.GetErrors(ModelState));// 400
             }
 
             try
@@ -68,9 +67,9 @@ namespace LojaVirtual.Services.API.Controllers
             }
         }
 
-        //DELETE api/produto/id
+        //DELETE api/produto/excluir
         [HttpDelete("{idProduto}")]
-        public IActionResult Delete(int idProduto)
+        public IActionResult Excluir(string idProduto)
         {
             try
             {
@@ -91,13 +90,14 @@ namespace LojaVirtual.Services.API.Controllers
             }
         }
 
-        //GET api/produto
+        ////GET api/produto/obtertodos
         [HttpGet]
-        public IActionResult Get()
+        public IActionResult ObterTodos()
         {
             try
             {
-                var list = _mapper.Map<List<ProdutoConsultaViewModel>>(_service.ObterTodos());
+                var list = _mapper.Map<List<ProdutoConsultaViewModel>>
+                                (_service.ObterTodos());
 
                 return Ok(list);
             }
@@ -107,13 +107,18 @@ namespace LojaVirtual.Services.API.Controllers
             }
         }
 
-        //GET api/produto/id
+        //GET api/produto/obterporid
         [HttpGet("{idProduto}")]
-        public IActionResult GetById(int idProduto)
+        public IActionResult ObterPorId(string idProduto)
         {
             try
             {
                 var produto = _mapper.Map<ProdutoConsultaViewModel>(_service.ObterPorId(idProduto));
+
+                if (produto == null)
+                {
+                    return Ok("Produto não encontrado.");
+                }
 
                 return Ok(produto);
             }
@@ -122,5 +127,6 @@ namespace LojaVirtual.Services.API.Controllers
                 return StatusCode(500, e.Message);
             }
         }
+
     }
 }

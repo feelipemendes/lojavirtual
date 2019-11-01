@@ -1,14 +1,15 @@
 ﻿using LojaVirtual.Domain.Entities;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace LojaVirtual.Domain.Interfaces.Repositories
 {
     public interface IProdutoRepository
     {
-        void Atualizar(int id, Produto produto);
-        void Detetar(int id);
+        void Atualizar(string id, Produto produto);
+        void Detetar(string id);
         void Inserir(Produto produto);
         List<Produto> ObterTodos();
-        Produto ObterPorId(int id);
+        Produto ObterPorId(string id);
     }
 }

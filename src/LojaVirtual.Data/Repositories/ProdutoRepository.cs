@@ -6,6 +6,7 @@ using MongoDB.Data.Settings;
 using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace LojaVirtual.Infra.Data.Repositories
@@ -19,7 +20,7 @@ namespace LojaVirtual.Infra.Data.Repositories
             _context = new MongoContext(settings);
         }
 
-        public void Atualizar(int id, Produto produto)
+        public void Atualizar(string id, Produto produto)
         {
             try
             {
@@ -31,7 +32,7 @@ namespace LojaVirtual.Infra.Data.Repositories
             }
         }
 
-        public void Detetar(int id)
+        public void Detetar(string id)
         {
             try
             {
@@ -56,7 +57,7 @@ namespace LojaVirtual.Infra.Data.Repositories
             }
         }
 
-        public Produto ObterPorId(int id)
+        public Produto ObterPorId(string id)
         {
             var filter = Builders<Produto>.Filter.Eq("Id", id);
             try

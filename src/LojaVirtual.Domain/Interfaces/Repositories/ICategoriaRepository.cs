@@ -7,11 +7,11 @@ namespace LojaVirtual.Domain.Interfaces.Repositories
     public interface ICategoriaRepository
     {
         
-            void Atualizar(int id, Categoria categoria);
-            void Detetar(int id);
+            void Atualizar(string id, Categoria categoria);
+            void Detetar(string id);
             void Inserir(Categoria categoria);
             List<Categoria> ObterTodos();
-            Categoria ObterPorId(int id);
+            Categoria ObterPorId(string id);
         
     }
 }

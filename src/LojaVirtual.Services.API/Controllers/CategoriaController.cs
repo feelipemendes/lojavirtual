@@ -12,7 +12,6 @@ namespace LojaVirtual.Services.API.Controllers
 
     [Produces("application/json")]
     [Route("api/categoria")]
-    [EnableCors("AllowAnyOrigin")]
     public class CategoriaController : Controller
     {
         private readonly ICategoriaService _service;
@@ -24,9 +23,9 @@ namespace LojaVirtual.Services.API.Controllers
             _mapper = mapper;
         }
 
-        //POST api/categoria
-        [HttpPost]
-        public IActionResult Post([FromBody] CategoriaCadasatroViewModel model)
+        //POST api/categoria/cadastrar
+        [HttpPost]        
+        public IActionResult Cadastrar([FromBody] CategoriaCadasatroViewModel model)
         {
             if (!ModelState.IsValid)
             {
@@ -38,7 +37,7 @@ namespace LojaVirtual.Services.API.Controllers
                 var categoria = _mapper.Map<Categoria>(model);
                 _service.Inserir(categoria);
 
-                return Ok($"Produto '{model.Nome}' cadastrado com sucesso.");
+                return Ok($"Categoria '{model.Nome}' cadastrada com sucesso.");
             }
             catch (Exception e)
             {
@@ -47,9 +46,9 @@ namespace LojaVirtual.Services.API.Controllers
             }
         }
 
-        //PUT api/categoria
-        [HttpPut]
-        public IActionResult Put([FromBody] CategoriaEdicaoViewModel model)
+        //PUT api/categoria/atualizar
+        [HttpPut("{idCategoria}")]
+        public IActionResult Atualizar(string idCategoria, [FromBody] CategoriaEdicaoViewModel model)
         {
             if (!ModelState.IsValid)
             {
@@ -59,9 +58,11 @@ namespace LojaVirtual.Services.API.Controllers
             try
             {
                 var categoria = _mapper.Map<Categoria>(model);
-                _service.Atualizar(model.Id, categoria);
 
-                return Ok($"Categoria '{model.Nome}' atualizado com sucesso");
+                categoria.Id = idCategoria;
+                _service.Atualizar(idCategoria, categoria);
+
+                return Ok($"Categoria '{model.Nome}' atualizada com sucesso");
             }
             catch (Exception e)
             {
@@ -69,9 +70,9 @@ namespace LojaVirtual.Services.API.Controllers
             }
         }
 
-        //DELETE api/categoria/id
+        //DELETE api/categoria/excluir
         [HttpDelete("{idCategoria}")]
-        public IActionResult Delete(int idCategoria)
+        public IActionResult Excluir(string idCategoria)
         {
             try
             {
@@ -79,12 +80,12 @@ namespace LojaVirtual.Services.API.Controllers
 
                 if (categoria == null)
                 {
-                    return Ok("Categoria não encontrado.");
+                    return Ok("Categoria não encontrada.");
                 }
 
                 _service.Detetar(idCategoria);
 
-                return Ok("Categoria excluído com sucesso.");
+                return Ok("Categoria excluída com sucesso.");
             }
             catch (Exception e)
             {
@@ -92,9 +93,9 @@ namespace LojaVirtual.Services.API.Controllers
             }
         }
 
-        //GET api/categoria
-        [HttpGet]
-        public IActionResult Get()
+        //GET api/categoria/obtertodos
+        [HttpGet]        
+        public IActionResult ObterTodos()
         {
             try
             {
@@ -108,13 +109,18 @@ namespace LojaVirtual.Services.API.Controllers
             }
         }
 
-        //GET api/categoria/id
+        //GET api/categoria/obterporid
         [HttpGet("{idCategoria}")]
-        public IActionResult GetById(int idCategoria)
+        public IActionResult ObterPorId(string idCategoria)
         {
             try
             {
-                var categoria = _mapper.Map<ProdutoConsultaViewModel>(_service.ObterPorId(idCategoria));
+                var categoria = _mapper.Map<CategoriaConsultaViewModel>(_service.ObterPorId(idCategoria));
+
+                if (categoria == null)
+                {
+                    return Ok("Categoria não encontrada.");
+                }
 
                 return Ok(categoria);
             }

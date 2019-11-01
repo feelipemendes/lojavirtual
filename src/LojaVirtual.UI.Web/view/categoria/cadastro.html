@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html ng-app="appCategoria">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <link href="../../Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body class="container" ng-controller="categoriaController">
+
+    <div class="card card-body bg-dark">
+        <h2 class="text-white">Cadastro de Produtos</h2>
+        <p class="text-white">
+            <a href="../../Index.html">Voltar</a> para a página inicial.
+        </p>
+    </div>
+
+    <br />
+    <strong>Formulário para cadastro de Categoria</strong>
+    <hr />
+
+    <div class="row">
+        <div class="col-md-4">
+
+            <label>Nome da Categoria:</label>
+            <input type="text" class="form-control" placeholder="Digite aqui"
+                   ng-model="categoria.Nome" />
+            <span class="text-danger" ng-repeat="e in erros['model.Nome']">{{e}}</span>
+            <br />
+
+            <button class="btn btn-success" ng-click="cadastrar()">
+                Cadastrar Categoria
+            </button>
+            <br />
+            <br />
+
+            <strong>{{mensagem}}</strong>
+        </div>
+    </div>
+
+    <script src="../../Scripts/jquery-3.0.0.min.js"></script>
+    <script src="../../Scripts/bootstrap.min.js"></script>
+    <script src="../../Scripts/angular.min.js"></script>
+
+    <script>
+
+        var app = angular.module('appCategoria', []);
+
+        app.controller('categoriaController', function ($scope, $http) {
+
+            $scope.categoria = {
+                Nome: ""
+            };
+
+            $scope.cadastrar = function () {
+                $scope.mensagem = "Processando, por favor aguarde.";
+
+                $scope.erros = {};
+
+                $http.post('http://localhost:51795/api/categoria/post',
+                    $scope.categoria)
+                    .then(function (result) {
+
+                        $scope.mensagem = result.data;
+
+                        $scope.categoria.Nome = "";
+                    })
+                    .catch(function (e) {
+
+                        if (e.status == 400) {
+                            $scope.erros = e.data;
+
+                            $scope.mensagem = "";
+                        } else {
+                            $scope.mensagem = e.data;
+                        }
+                    });
+            };
+        });
+    </script>
+</body>
+</html>

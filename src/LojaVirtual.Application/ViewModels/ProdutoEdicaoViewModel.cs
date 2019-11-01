@@ -6,7 +6,7 @@ namespace LojaVirtual.Application.ViewModels
 {
     public class ProdutoEdicaoViewModel
     {
-        public int Id { get; set; }
+        public string Id { get; set; }
 
         [Required(ErrorMessage = "Por favor, insira o nome do Produto.")]
         [MinLength(2)]
@@ -24,7 +24,7 @@ namespace LojaVirtual.Application.ViewModels
 
         [Required(ErrorMessage = "Por favor, insira a categoria do Produto.")]
         [DisplayName("Categoria")]
-        public int IdCategoria { get; set; }
+        public string IdCategoria { get; set; }
 
         [Required(ErrorMessage = "Por favor, insira o preço do Produto.")]
         [DisplayName("Preço")]

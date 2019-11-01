@@ -9,8 +9,9 @@ namespace LojaVirtual.Application.ViewModels
         public string Nome { get; set; }        
         public string Descricao { get; set; }        
         public string UrlImagem { get; set; }
-        public Categoria Categoria { get; set; }
         public decimal Preco { get; set; }        
         public string Marca { get; set; }
+        public Categoria Categoria { get; set; }
+        public string CodigoProduto { get; set; }
     }
 }

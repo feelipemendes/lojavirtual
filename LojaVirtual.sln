@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.779
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - UI", "0 - UI", "{6B445B8A-7857-405B-9C6E-8C53CC62B539}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{F5EB63B9-093B-48C4-8B3E-4061403CF19E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Application", "{0427D74C-2667-4D30-9F04-70E2A99D0F97}"
@@ -20,8 +18,6 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LojaVirtual.Application", "src\LojaVirtual.Application\LojaVirtual.Application.csproj", "{5DEEDA4A-0DAF-4496-B009-9CF99E672807}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LojaVirtual.Services.API", "src\LojaVirtual.Services.API\LojaVirtual.Services.API.csproj", "{CE7CFA25-CA30-45BD-BDBD-A5A20534E432}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LojaVirtual.UI.Web", "src\LojaVirtual.UI.Web\LojaVirtual.UI.Web.csproj", "{C57D8B29-DE3B-40EE-879A-0B8F46320C6C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,10 +41,6 @@ Global
 		{CE7CFA25-CA30-45BD-BDBD-A5A20534E432}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE7CFA25-CA30-45BD-BDBD-A5A20534E432}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE7CFA25-CA30-45BD-BDBD-A5A20534E432}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C57D8B29-DE3B-40EE-879A-0B8F46320C6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C57D8B29-DE3B-40EE-879A-0B8F46320C6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C57D8B29-DE3B-40EE-879A-0B8F46320C6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C57D8B29-DE3B-40EE-879A-0B8F46320C6C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -58,7 +50,6 @@ Global
 		{9A2744A0-8015-471F-88AB-90EE3B029A61} = {F5EB63B9-093B-48C4-8B3E-4061403CF19E}
 		{5DEEDA4A-0DAF-4496-B009-9CF99E672807} = {0427D74C-2667-4D30-9F04-70E2A99D0F97}
 		{CE7CFA25-CA30-45BD-BDBD-A5A20534E432} = {3AE39FF9-B8DE-442A-ABA5-D3AAE7FCCD7E}
-		{C57D8B29-DE3B-40EE-879A-0B8F46320C6C} = {6B445B8A-7857-405B-9C6E-8C53CC62B539}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C0F52287-87AF-47BB-BB02-A737543240DC}

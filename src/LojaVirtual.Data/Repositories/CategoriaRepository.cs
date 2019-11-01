@@ -18,7 +18,7 @@ namespace LojaVirtual.Infra.Data.Repositories
             _context = new MongoContext(settings);
         }
 
-        public void Atualizar(int id, Categoria categoria)
+        public void Atualizar(string id, Categoria categoria)
         {
             try
             {
@@ -30,7 +30,7 @@ namespace LojaVirtual.Infra.Data.Repositories
             }
         }
 
-        public void Detetar(int id)
+        public void Detetar(string id)
         {
             try
             {
@@ -55,7 +55,7 @@ namespace LojaVirtual.Infra.Data.Repositories
             }
         }
 
-        public Categoria ObterPorId(int id)
+        public Categoria ObterPorId(string id)
         {
             var filter = Builders<Categoria>.Filter.Eq("Id", id);
             try
@@ -66,7 +66,6 @@ namespace LojaVirtual.Infra.Data.Repositories
             }
             catch (Exception ex)
             {
-
                 throw ex;
             }
         }

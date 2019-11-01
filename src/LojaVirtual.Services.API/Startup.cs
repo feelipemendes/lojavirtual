@@ -10,7 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using MongoDB.Data.Settings;
-using SimpleInjector;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace LojaVirtual.Services.API
 {
@@ -26,8 +26,32 @@ namespace LojaVirtual.Services.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc();
-            services.AddCors();
+            services.AddMvc();            
+
+            //configurando o gerador de documentação
+            //da api através do framework SWAGGER
+            services.AddSwaggerGen(
+            s =>
+            {
+                s.SwaggerDoc("v1", 
+                    new Info
+            {
+
+                Title = "Projeto Controle de Produtos",
+                Description = "Sistema de controle de produtos ASP.NET CORE",
+
+                Version = "v1",
+                Contact = new Contact
+
+                {
+                    Name = "Felipe Mendes",
+                    Email = "luizb@id.uff.br",
+                    Url = "https://www.linkedin.com/in/feelipemendes/"
+
+                }
+            });
+            }
+            );
 
             // requires using Microsoft.Extensions.Options
             services.Configure<DatabaseSettings>(
@@ -48,7 +72,6 @@ namespace LojaVirtual.Services.API
             });
             IMapper mapper = config.CreateMapper();
             services.AddSingleton(mapper);
-
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -60,10 +83,15 @@ namespace LojaVirtual.Services.API
             }
 
             app.UseMvc();
-            app.UseCors(
-                option => option.AllowAnyOrigin()
-                .AllowAnyHeader()
-                .AllowAnyMethod());
+            //registrando o swagger
+            app.UseSwagger();
+            app.UseSwaggerUI(
+            s =>
+            {
+                s.SwaggerEndpoint("/swagger/v1/swagger.json", "e-commerce");
+                
+            });
+            
         }
     }
 }

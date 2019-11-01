@@ -8,7 +8,7 @@
 </head>
 <body class="container" ng-controller="produtoController">
 
-    <div class="card card-body bd-dark">
+    <div class="card card-body bg-dark">
         <h2 class="text-white">Cadastro de Produtos</h2>
         <p class="text-white">
             <a href="../../Index.html">Voltar</a> para a página inicial.
@@ -16,7 +16,6 @@
     </div>
 
     <br />
-
     <strong>Formulário para cadastro de Produtos</strong>
     <hr />
 
@@ -39,7 +38,7 @@
             <br />
 
             <label>Selecione a Categoria do Produto:</label>
-            <select class="form-control" ng-model="produto.Categoria" />
+            <select class="form-control" ng-model="produto.IdCategoria" ng-init="" />
             <br />
 
             <label>Preço do Produto:</label>
@@ -74,7 +73,7 @@
                 Nome: "",
                 Descricao: "",
                 UrlImagem: "",
-                //Categoria: "",
+                Categoria: "",
                 Preco: "",
                 Marca: "",
 
@@ -93,7 +92,7 @@
                         $scope.produto.Nome = "";
                         $scope.produto.Descricao = "";
                         $scope.produto.UrlImagem = "";
-                        //$scope.produto.Categoria = "";
+                        $scope.produto.Categoria = "";
                         $scope.produto.Preco = "";
                         $scope.produto.Marca = "";
                     })

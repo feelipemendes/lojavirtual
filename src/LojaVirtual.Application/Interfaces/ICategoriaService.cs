@@ -6,10 +6,10 @@ namespace LojaVirtual.Application.Interfaces
 {
     public interface ICategoriaService
     {
-        void Atualizar(int id, Categoria produto);
-        void Detetar(int id);
+        void Atualizar(string id, Categoria produto);
+        void Detetar(string id);
         void Inserir(Categoria produto);
         List<Categoria> ObterTodos();
-        Categoria ObterPorId(int id);
+        Categoria ObterPorId(string id);
     }
 }
